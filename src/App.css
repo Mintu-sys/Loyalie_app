@@ -1,38 +1,312 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+
+/* NavBAR */
+
+.navbar {
+  background-color:transparent;
+  width: 100%;
+  position: absolute;
+  padding: 15px 0px;
+  z-index: 1;
+
+}
+
+
+
+
+
+.logo{
+  width: 131px;
+  height: 39px;
+}
+
+.nav-link{ 
+  color: #fff !important;
+  text-transform: uppercase;
+  text-align:center;
+}
+
+.nav-link:hover{ 
+  color: #1CB2AA !important;
+}
+
+/* Homepage CSS START */
+
+/* Home Banner */
+
+.banner {
+  background-image: url("./images/banner/main-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important ;
+  height: 91vh;
+  width:100vw;
+  background-blend-mode: overlay;
+  background-color: #404040;
+}
+
+.main_header_one{
+  color: #fff;
+  font-size: 30px;
+}
+
+.main_header_two{
+  color: #fff;
+  font-size: 37px;
+  text-transform: uppercase;
+}
+
+.carousel-indicators, .carousel-control-prev, .carousel-control-next {
+  display: none !important;
+}
+
+.main_btn {
+  background-color: #1CB2AA;
+  padding: 8px 30px;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+
+/* HomePage Clients Carousel Section */
+
+
+.clientsimg{
+  background-color: #fff !important;
+  padding: 5px 0px;
+  margin-top: -35px;
+}
+
+.clients_logo {
+  width: 130px;
+  height: 70px;
+}
+
+/* ConnectRE Section */
+
+.videoTag {
+  position: absolute;
+  object-fit: cover;
+  width:100vw;
+  z-index: -1;
+  height: 100%;
+}
+
+.connectre_logo{
+  width: 25%;
+}
+
+.connectre_title {
+  color: #fff;
+  font-size: 32px;
+}
+
+.connectre_descrip {
+  color: #fff;
+  font-size: 22px;
+}
+
+
+
+/* WinnRE Section */
+
+.winnre_section{
+  background-color: #f0f0f0;
+  
+}
+
+.winnre_screens {
+  width: 85%;
+}
+
+.winnre_logo{
+  width: 20%;
+}
+
+.winnre_title {
+  color: #000;
+  font-size: 32px;
+}
+
+.winnre_descrip {
+  color: #000;
+  font-size: 22px;
+}
+
+
+/* Why Partner With Us? Section */
+
+.partner_icons{
+  width: 25%;
+}
+
+
+/* What Sets Us Apart? */
+
+.apart_section_header {
+          background-color: #1CB2AA;
+          color: #fff;
+}
+
+.apart_card {
+  
+    border-bottom: 2px solid #1CB2AA;
+    background: #fff;
+    box-shadow: 0px 10px 30px 0px rgb(50 50 50 / 16%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* Our Brands */
+
+.brands_logo {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #b6b6b6;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* What Our Clients Say */
+.clients_say{
+  background-color: #f0f0f0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.client_logos{
+  width: 100px;
+  float: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.client_details{
+  text-align: left;
+  margin: auto 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.quote_icon{
+  font-size: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Who Is Talking About Us? */
+
+.media_logos {
+    width: 90%;
+    text-align: center;
 }
+
+
+/* Homepage CSS end */
+
+
+
+/* Footer */
+
+.footer_section {
+  background-color: #1A253B;
+}
+
+.footer_logo {
+  width: 151px;
+  height: 49px;
+}
+
+.footer_desc{
+  color: #fff;
+}
+
+
+.social_icon {
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.footer_title{
+  color: #fff;
+}
+
+.footer_link ul{
+  padding-left: 0px;
+}
+
+.footer_link li{
+  color: #fff;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  font-size: 13px;
+  margin: 2px 0px;
+}
+
+/* Footer CSS end */
+
+
+
+/* About Page CSS Start */
+
+.about_banner {
+  background-image: url("./images/banner/about_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important ;
+  height: 100vh;
+  width:100vw;
+  background-blend-mode: overlay;
+  background-color: #404040;
+}
+
+
+.our_vision {
+  background-image: url("./images/others/our_vision_background.jpg");
+  background-size: cover;
+  color:#fff;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.our_team{
+  background-color: #1A253B;
+  color: #fff;
+}
+
+
+.our_culture_icon {
+  width: 41px;
+  height: 41px;
+
+}
+
+.our_value_icon {
+  width: 118px;
+  height: 118px;
+}
+
+.career_sec{
+  padding: 50px 0px 50px 0px;
+  border-radius: 50%;
+  width: 33.333%;
+}
+.career_sec1 {
+  z-index: 2;
+}
+
+.career_sec2 {
+  z-index: 1;
+  margin-left: -20px !important;
+}
+
+.career_sec3 {
+  margin-left: -20px !important;
+}
+
+
+
+/* About Page CSS end */
+
+
+
